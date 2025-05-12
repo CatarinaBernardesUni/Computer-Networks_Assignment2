@@ -14,7 +14,7 @@ from colorama import init, Fore, Style
 # Initialize colorama
 init(autoreset=True)
 
-predefined_list_for_ping = ['google.com', 'yahoo.com', 'bing.com', 'nonexistent.domain.test']
+predefined_list_for_ping = ['google.com', 'yahoo.com', 'bing.com', 'nonexistent.domain.test', '10.255.255.1']
 
 # To store logs
 ping_results_log = []
@@ -41,7 +41,8 @@ def perform_ping(host):
         # Execute the ping command and capture the output
         # stdout: The standard output of the subprocess, as a bytes object.
         # stderr: The standard error of the subprocess, as a bytes object.
-        result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        # 4 is the default timeout of the ping command on windows
+        result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=4)
 
         if result.returncode == 0:
             print(f"{Fore.GREEN}Host {host} is reachable.")

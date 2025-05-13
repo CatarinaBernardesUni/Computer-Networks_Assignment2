@@ -1,13 +1,10 @@
-# The OS module in Python provides functions for interacting with the operating system
-import os
+import json
 # The Platform module is used to retrieve information about the platform on which the program is running
 import platform
 # The subprocess module is used to run new applications or programs by creating new processes
 import subprocess
 # The sys module provides functions and variables that are used to manipulate different
 # parts of the Python runtime environment
-import sys
-
 from datetime import datetime
 from colorama import init, Fore, Style
 
@@ -18,6 +15,7 @@ predefined_list_for_ping = ['google.com', 'yahoo.com', 'bing.com', 'nonexistent.
 
 # To store logs
 ping_results_log = []
+
 
 def perform_ping(host):
     """
@@ -76,6 +74,11 @@ def perform_ping(host):
     print("-" * 57)
 
 
+def log_results(results):
+    with open("ping_log.txt", "w") as log_file:
+        json.dump(results, log_file, indent=5)
+
+
 def main():
     # print("Starting the ping tool...\n")
     print(f"{Style.BRIGHT}Starting the ping tool...\n")
@@ -100,6 +103,8 @@ def main():
     for log in ping_results_log:
         color = Fore.GREEN if log['status'] == 'reachable' else Fore.RED
         print(f"{color}{log['host']} - {log['status']} at {Fore.BLUE}{log['timestamp']}")
+    log_results(ping_results_log)
+
 
 if __name__ == "__main__":
     # Check if the script is being run directly

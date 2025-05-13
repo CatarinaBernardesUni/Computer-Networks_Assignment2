@@ -75,6 +75,7 @@ def perform_ping(host):
     print(f"{Fore.CYAN}Finished pinging {host} at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("-" * 57)
 
+
 def main():
     # print("Starting the ping tool...\n")
     print(f"{Style.BRIGHT}Starting the ping tool...\n")

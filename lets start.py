@@ -1,4 +1,5 @@
 import json
+import os  # Needed to check the existence of the ping_log file
 import platform  # To detect the operating system
 import subprocess  # To execute the ping commands
 from datetime import datetime  # To make the timestamp of the log entries
@@ -75,13 +76,29 @@ def perform_ping(host):
 
 def log_results(results):
     """
-    Save the ping results to a file in JSON format.
+    Save the ping results to a file in JSON format under a timestamped key.
 
     Parameters:
         results (list): List of dictionaries containing host, status, and timestamp.
     """
-    with open("ping_log.txt", "w") as log_file:
-        json.dump(results, log_file, indent=5)
+    log_filename = "ping_log.txt"
+    current_timestamp = f"Results from {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+
+    # Load existing data if the file exists and is valid JSON
+    if os.path.exists(log_filename):
+        try:
+            with open(log_filename, "r") as file:
+                data = json.load(file)
+        except json.JSONDecodeError:
+            data = {}
+    else:
+        data = {}
+
+    # Add new results under the current timestamp
+    data[current_timestamp] = results
+
+    with open(log_filename, "w") as log_file:
+        json.dump(data, log_file, indent=5)
 
 
 def main():

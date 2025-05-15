@@ -1,27 +1,41 @@
-[
-     {
-          "host": "google.com",
-          "status": "reachable",
-          "timestamp": "2025-05-15 14:15:52"
-     },
-     {
-          "host": "yahoo.com",
-          "status": "reachable",
-          "timestamp": "2025-05-15 14:15:55"
-     },
-     {
-          "host": "bing.com",
-          "status": "reachable",
-          "timestamp": "2025-05-15 14:15:59"
-     },
-     {
-          "host": "nonexistent.domain.test",
-          "status": "unreachable",
-          "timestamp": "2025-05-15 14:16:02"
-     },
-     {
-          "host": "10.255.255.1",
-          "status": "unreachable",
-          "timestamp": "2025-05-15 14:16:02"
-     }
-]
+{
+     "Results from 2025-05-15 14:30:30": [
+          {
+               "host": "google.com",
+               "status": "reachable",
+               "timestamp": "2025-05-15 14:30:17"
+          },
+          {
+               "host": "yahoo.com",
+               "status": "reachable",
+               "timestamp": "2025-05-15 14:30:20"
+          },
+          {
+               "host": "bing.com",
+               "status": "reachable",
+               "timestamp": "2025-05-15 14:30:23"
+          },
+          {
+               "host": "nonexistent.domain.test",
+               "status": "unreachable",
+               "timestamp": "2025-05-15 14:30:26"
+          },
+          {
+               "host": "10.255.255.1",
+               "status": "unreachable",
+               "timestamp": "2025-05-15 14:30:26"
+          }
+     ],
+     "Results from 2025-05-15 14:32:43": [
+          {
+               "host": "<>invalid-host-name",
+               "status": "unreachable",
+               "timestamp": "2025-05-15 14:32:42"
+          },
+          {
+               "host": "<>invalid-host-name",
+               "status": "unreachable",
+               "timestamp": "2025-05-15 14:32:43"
+          }
+     ]
+}

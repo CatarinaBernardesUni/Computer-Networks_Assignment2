@@ -79,7 +79,8 @@ def log_results(results):
     Save the ping results to a file in JSON format under a timestamped key.
 
     Parameters:
-        results (list): List of dictionaries containing host, status, and timestamp.
+        results (dict): Dictionary with the key being the timestamp of logging and
+                        the values a list of results containing host, status, and timestamp.
     """
     log_filename = "ping_log.txt"
     current_timestamp = f"Results from {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
@@ -99,7 +100,6 @@ def log_results(results):
 
     with open(log_filename, "w") as log_file:
         json.dump(data, log_file, indent=5)
-
 
 def main():
     """

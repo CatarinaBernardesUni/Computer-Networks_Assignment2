@@ -1,7 +1,27 @@
 [
      {
-          "host": "youtube.com",
+          "host": "google.com",
           "status": "reachable",
-          "timestamp": "2025-05-13 16:32:08"
+          "timestamp": "2025-05-15 14:15:52"
+     },
+     {
+          "host": "yahoo.com",
+          "status": "reachable",
+          "timestamp": "2025-05-15 14:15:55"
+     },
+     {
+          "host": "bing.com",
+          "status": "reachable",
+          "timestamp": "2025-05-15 14:15:59"
+     },
+     {
+          "host": "nonexistent.domain.test",
+          "status": "unreachable",
+          "timestamp": "2025-05-15 14:16:02"
+     },
+     {
+          "host": "10.255.255.1",
+          "status": "unreachable",
+          "timestamp": "2025-05-15 14:16:02"
      }
 ]

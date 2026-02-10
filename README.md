@@ -16,7 +16,7 @@ A Python-based network diagnostic tool that performs ping operations on specifie
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/Computer-Networks_Assignment2.git
+   git clone https://github.com/CatarinaBernardesUni/Computer-Networks_Assignment2.git
    cd Computer-Networks_Assignment2
    ```
 

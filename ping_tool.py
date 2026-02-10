@@ -100,7 +100,6 @@ def log_results(results):
     with open(log_filename, "w") as log_file:
         json.dump(data, log_file, indent=5)
 
-
 def main():
     """
     Main function to use the ping tool.

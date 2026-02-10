@@ -37,5 +37,100 @@
                "status": "unreachable",
                "timestamp": "2025-05-15 14:32:43"
           }
+     ],
+     "Results from 2025-05-16 23:58:55": [
+          {
+               "host": "google.com",
+               "status": "reachable",
+               "timestamp": "2025-05-16 23:58:42"
+          },
+          {
+               "host": "yahoo.com",
+               "status": "reachable",
+               "timestamp": "2025-05-16 23:58:45"
+          },
+          {
+               "host": "bing.com",
+               "status": "reachable",
+               "timestamp": "2025-05-16 23:58:48"
+          },
+          {
+               "host": "nonexistent.domain.test",
+               "status": "unreachable",
+               "timestamp": "2025-05-16 23:58:51"
+          },
+          {
+               "host": "10.255.255.1",
+               "status": "unreachable",
+               "timestamp": "2025-05-16 23:58:51"
+          }
+     ],
+     "Results from 2025-05-17 00:01:18": [
+          {
+               "host": "126.256.125.12",
+               "status": "unreachable",
+               "timestamp": "2025-05-17 00:01:18"
+          }
+     ],
+     "Results from 2025-05-17 00:03:18": [
+          {
+               "host": "google.com",
+               "status": "reachable",
+               "timestamp": "2025-05-17 00:03:04"
+          },
+          {
+               "host": "yahoo.com",
+               "status": "reachable",
+               "timestamp": "2025-05-17 00:03:07"
+          },
+          {
+               "host": "bing.com",
+               "status": "reachable",
+               "timestamp": "2025-05-17 00:03:10"
+          },
+          {
+               "host": "nonexistent.domain.test",
+               "status": "unreachable",
+               "timestamp": "2025-05-17 00:03:14"
+          },
+          {
+               "host": "10.255.255.1",
+               "status": "unreachable",
+               "timestamp": "2025-05-17 00:03:14"
+          }
+     ],
+     "Results from 2025-11-04 17:34:14": [
+          {
+               "host": "google.com",
+               "status": "reachable",
+               "timestamp": "2025-11-04 17:34:01"
+          },
+          {
+               "host": "yahoo.com",
+               "status": "reachable",
+               "timestamp": "2025-11-04 17:34:04"
+          },
+          {
+               "host": "bing.com",
+               "status": "reachable",
+               "timestamp": "2025-11-04 17:34:07"
+          },
+          {
+               "host": "nonexistent.domain.test",
+               "status": "unreachable",
+               "timestamp": "2025-11-04 17:34:10"
+          },
+          {
+               "host": "10.255.255.1",
+               "status": "unreachable",
+               "timestamp": "2025-11-04 17:34:10"
+          }
+     ],
+     "Results from 2025-11-04 17:35:43": [
+          {
+               "host": "127.0.0.1",
+               "status": "reachable",
+               "timestamp": "2025-11-04 17:35:40"
+          }
      ]
 }
